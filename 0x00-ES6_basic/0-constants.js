@@ -12,5 +12,3 @@ export function tasktaskNext() {
   return combination;
 }
 
-console.log(`${taskFirst()} ${tasktaskNext()}`);
-
