@@ -8,5 +8,4 @@ function handleResponseFromAPI(promise) {
     })
   );
 }
-
-export default handleResponseFromAPI;
+export default handleResponseFromAP;
