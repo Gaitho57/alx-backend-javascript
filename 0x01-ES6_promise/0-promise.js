@@ -12,3 +12,4 @@ getResponseFromAPI()
   .catch((error) => {
     console.log(error);
   });
+export default getResponseFromAPI;
