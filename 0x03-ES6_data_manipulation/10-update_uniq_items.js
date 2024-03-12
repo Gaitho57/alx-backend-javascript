@@ -1,8 +1,14 @@
-export default function updateUniqueItems(map) {
-  if (!(map instanceof Map)) { throw new Error('Cannot process'); }
-  let key;
-  for (key of map.keys()) {
-    if (map.get(key) === 1) { map.set(key, 100); }
+/**
+ * Update map values that's 1 to 100
+ * @param {Map} map - A collection of map
+ */
+export default function (map) {
+  if (!(map instanceof Map)) {
+    throw new Error('Cannot process');
   }
-  return map;
+  map.forEach((value, key, map) => {
+    if (value === 1) {
+      map.set(key, 100);
+    }
+  });
 }
